@@ -3,11 +3,14 @@
     <!-- Jonathan Ramos
         CSC102 -->
 <head>
+    <script type = text/javascrip></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UAT Space Page</title>
+    <script src="code.js"></script>
 </head>
+
 <body>
     <!-- Page title, only use 1 <h1> tag on a page -->
     <h1>UAT Space Program</h1>
@@ -20,6 +23,31 @@
 <br/>
 
     <!-- Adds a button. Uses a JavaScript alert to show when the button was pressed -->
-    <input type="button" Value="Press Here" onclick="alert('you clicked me');"
+    <input type="button" Value="Press Here" onclick="alert('you clicked me');" 
+<br>
+    <p> 
+        Countdown: <span id=" countdown"></span>
+    </p>
+    <br>
+    <br>
+    <br>
+    <!-- adds a gif-->
+        <img id="hidden-gif" src="takeoff.gif" alt="hidden animation">
+
+    <Script>
+        //short hand to point to the "countdown" ID
+        var countdownElem = document.getElementById(" countdown");
+
+        //runs the runTimer function that is defined on the code.js page
+        runTimer(countdownElem);
+        
+        //document.getElementById gets the gif and stores it as a variable
+         var gif = document.getElementById("hidden-gif");
+
+        //runs launchGif function that is defined in the code.js page
+        launchGif(gif)
+            
+    </Script>
+    <div></div>
  </body>
 </html>
